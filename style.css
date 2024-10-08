@@ -1,0 +1,386 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+    font-weight: 600;
+}
+body{
+    background-color: rgb(21, 17, 76);
+background-image: url(stars1.webp);
+
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ width: 100%;
+ height: 90px;
+ background-color: rgb(26, 26, 118);
+}
+header h1{
+   color: white;
+    font-size: x-large;
+text-transform: uppercase;
+font-size: 26px;
+font-weight: 900;
+font-family: 'Lucida Sans', 'Lucida Sans Regular';
+}
+.inputs{
+    width: 80%;
+    margin: auto;
+    padding-top: 20px;
+    
+
+}
+input{
+    width: 90%;
+  padding-left: 8px;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+border: none;
+outline: none;
+  margin: 8px;
+  height: 40px;
+  border-radius: 10px;
+  transition: .7s;
+}
+
+input:focus{
+    background-color: rgb(1, 1, 40);
+ 
+}
+
+small{
+    color: aliceblue;
+    cursor: pointer;
+}
+.ptad input{
+ 
+   width: 20%;
+}
+.create{
+    color: rgb(247, 247, 247);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:  #2c1e7d;
+    width: 175px;
+    height: 40px;
+    margin-top: 15px;
+    border: none;
+    text-transform: uppercase;
+    border-radius: 10px;
+    transition: .7s;
+    width: 80%;
+  margin-left: 50px;
+  cursor: pointer;
+  margin-bottom: 15px;
+    
+}
+
+#deleteall{
+    cursor: pointer;
+    margin: 20px 155px 20px 65px;
+
+    transition: .7s;
+ 
+
+}
+#deleteall:hover{
+    scale: 1.05;
+    background-color:  #172c88;
+}
+.ca{
+    margin-left: 67px;
+}
+.deleteAllBtn{
+    color: rgb(247, 247, 247);
+    background-color:  #2c1e7d;
+    border: none;
+  margin: 10px;
+
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    
+}
+.create:hover{
+    scale: 1.05;
+    background-color:  #172c88;
+}
+#total{
+    background-color: rgb(175, 32, 32);
+    border-radius: 5px;
+    padding: 8px 6px;
+    word-spacing: 5px;
+}
+#total::before{
+    content: 'TOTAL';
+}
+.se1{
+    width: 40%;
+    
+}
+.ser{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    right: 40px;
+}
+table{
+   
+    text-align: center;
+    color: white;
+    width: 80%;
+}
+.outputs{
+display: flex;
+justify-content: center;
+margin-bottom: 75px;
+margin-left: 10px;
+
+}
+.outputs th{
+  padding-right: 50px;
+  padding-bottom: 10px;
+ 
+ text-transform: uppercase;
+
+    }
+    .outputs td{
+        padding-right: 50px;
+        padding-bottom: 8px;
+ 
+      
+          }
+
+table tr{
+
+    text-align: center;
+    color: white;
+   
+
+}
+
+
+button{
+    background-color:  #302282;
+    padding: 4px;
+    color: aliceblue;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+.bu{
+    transition: .7s;
+    padding: 5px;
+}
+
+.bu:hover{
+    scale: 1.2;
+    background-color:  #172c88;
+    
+}
+
+
+
+
+@media (max-width: 500px) {
+    table{
+       
+        
+   font-size: 9px;
+   
+    }
+  
+    .ser{
+       
+        width: 90%;
+        position: relative;
+   left: 5px;
+    }
+    .create{
+        width: 75%;
+        position: relative;
+        right: 20px;
+      
+    }
+    .ptad input{
+ 
+        width: 60%;
+     }
+    
+     #deleteall{
+    
+     width: 75%;
+     position: relative;
+     right: 25px;
+    
+    }
+    
+    header h1{
+     
+     font-size: 18px;
+  
+     }
+    
+     .outputs th{
+        padding-right: 3px;
+        
+       text-transform: uppercase;
+      
+          }
+          .outputs td{
+              padding-right: 3px;
+             
+            
+                }
+    
+  }
+
+
+/* ///////////////////////////////////////////////  */
+
+  @media (min-width: 500px ){
+
+    table{
+       
+        
+        font-size: 11px;
+      
+         }
+    
+    .ser{
+        position: relative;
+        left: 4px;
+        width: 85%;
+    }
+    .create{
+        width: 75%;
+      
+      
+    }
+    .ptad input{
+ 
+        width: 30%;
+     }
+    
+     #deleteall{
+       
+     width: 70%;
+   
+    
+    }
+    
+    header h1{
+     
+     font-size: 23px;
+  
+     }
+    
+     .outputs th{
+        padding-right: 7px;
+      
+       
+       text-transform: uppercase;
+      
+          }
+          .outputs td{
+              padding-right: 7px;
+            
+            
+                }
+  }
+
+
+
+
+
+  @media (min-width: 702px){
+    .ptad input{
+ 
+        width: 40%;
+     }
+     .ser{
+        position: relative;
+        left: 40px;
+        width: 80%;
+    }
+     #deleteall{
+    
+        width: 75%;
+        position: relative;
+      left: 15px;
+       
+       }
+
+       table{
+       
+        
+        font-size: 15px;
+      
+         }
+
+       .outputs th{
+        padding-right: 12px;
+      
+       
+       text-transform: uppercase;
+      
+          }
+          .outputs td{
+              padding-right: 12px;
+            
+            
+                }
+  }
+
+
+  @media (min-width: 1100px){
+    .ptad input{
+ 
+        width: 20%;
+     }
+     table{
+   
+        text-align: center;
+        color: white;
+        width: 80%;
+    }
+    .ser{
+      
+        width: 78%;
+        position: relative;
+        left: 60px;
+    }
+    .create{
+   
+    width: 80%;
+ 
+}
+#deleteall{
+    
+    width: 80%;
+    position: relative;
+ right: 5px;
+   
+   }
+   .outputs th{
+    padding-right: 50px;
+    padding-bottom: 10px;
+   
+   text-transform: uppercase;
+  
+      }
+      .outputs td{
+          padding-right: 50px;
+       
+   
+        
+            }
+  }
+
